@@ -45,7 +45,7 @@
 //m_iszPlayerName
 0x660
 //m_pActionTrackingServices
-0x730
+0x1538
 //m_iNumRoundKills
 0x110
 //m_unTotalRoundDamageDealt
