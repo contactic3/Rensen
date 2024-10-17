@@ -27,7 +27,7 @@
 //m_vecVelocity
 0x400
 //m_entitySpottedState + m_bSpotted
-0x23B8
+0x23C0
 //m_bIsScoped
 0x23D0
 //m_pClippingWeapon
@@ -41,7 +41,7 @@
 //m_vecViewOffset
 0xCB0
 //m_modelState + 0x80
-0x170
+0x1F0
 //m_iszPlayerName
 0x660
 //m_pActionTrackingServices
@@ -51,6 +51,6 @@
 //m_unTotalRoundDamageDealt
 0x118
 //m_AttributeManager + m_Item + m_iItemDefinitionIndex
-0x1148
+0x139A
 //m_angEyeAngles
 0x1438
