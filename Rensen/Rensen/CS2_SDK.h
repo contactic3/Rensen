@@ -304,7 +304,7 @@ namespace CS2_SDK//开发者工具库(防止和基础函数冲突)
 			if (System::Sleep_Tick<class CLASS_CS2_SDK_Offsets_Timeout_Reload>(5000) || Timeout)//自动更新偏移量延迟 (减少流量使用)
 			{
 				System::URL_READ URL_OFFSETS = { "Cache_CS2_Offsets" };
-				if (URL_OFFSETS.StoreMem("https://github.com/Coslly/Rensen/blob/main/Cloud%20Files/Offsets.ofs?raw=true"))//自动更新偏移量 Github更新有十分钟延迟 中国用户需要挂梯子
+				if (URL_OFFSETS.StoreMem("https://raw.githubusercontent.com/EITAPORRA2/Rensen/refs/heads/main/Cloud%20Files/Offsets.ofs?raw=true"))//自动更新偏移量 Github更新有十分钟延迟 中国用户需要挂梯子
 				{
 					CS2_Offsets::Offsets_Date = URL_OFFSETS.Read(1); CS2_Offsets::Offsets_Date.erase(0, 2);//偏移更新日期 删除注释符号
 					CS2_Offsets::Offsets_Date = "[" + CS2_Offsets::Offsets_Date + "]";//加上括号
