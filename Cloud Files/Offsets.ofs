@@ -1,21 +1,21 @@
-//2024-08-09 10:45
+//2024-11-14 12:00
 
 //dwLocalPlayerController
-0x1A1F8F0
+0x1A3FF90
 //dwLocalPlayerPawn
-0x1834B18
+0x1853CE8
 //dwEntityList
-0x19CFC48
+0x19F0468
 //dwViewAngles
-0x1A3BBB0
+0x1A5C610
 //dwViewMatrix
-0x1A31D30
+0x1A52510
 //m_hPlayerPawn
 0x80C
 //m_iTeamNum
 0x3E3
 //m_ArmorValue
-0x2404
+0x241C
 //m_iHealth
 0x344
 //m_iIDEntIndex
@@ -23,13 +23,13 @@
 //m_fFlags
 0x3EC
 //m_iShotsFired
-0x23E4
+0x23FC
 //m_vecVelocity
 0x400
 //m_entitySpottedState + m_bSpotted
-0x23C0
+0x23D8
 //m_bIsScoped
-0x23D0
+0x23E8
 //m_pClippingWeapon
 0x13A0
 //m_pGameSceneNode
@@ -45,12 +45,12 @@
 //m_iszPlayerName
 0x660
 //m_pActionTrackingServices
-0x1538
+0x730
 //m_iNumRoundKills
 0x110
 //m_unTotalRoundDamageDealt
 0x118
 //m_AttributeManager + m_Item + m_iItemDefinitionIndex
-0x1342
+0x1352
 //m_angEyeAngles
 0x1438
