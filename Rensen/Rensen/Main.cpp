@@ -293,7 +293,7 @@ namespace Control_Var//套用到菜单的调试变量 (例如功能开关)
 			to_string(UI_Legit_RemoveRecoil_Sensitive) + "\n"
 		);
 	}
-	void LoadCloudConfig(string FileName = "", string NormalURL = "https://github.com/EITAPORRA2/Rensen/tree/main/Cloud%20Files/") noexcept//加载Github云参数
+	void LoadCloudConfig(string FileName = "", string NormalURL = "https://github.com/contactic3/Rensen/tree/main/Cloud%20Files/") noexcept//加载Github云参数
 	{
 		System::URL_READ URL_CONFIG = { "Cache_CloudConfig" };
 		if (URL_CONFIG.StoreMem(NormalURL + FileName + (string)".cfg?raw=true"))
@@ -762,7 +762,7 @@ void Thread_Menu() noexcept//菜单线程 (提供给使用者丰富的自定义�
 					GUI_VAR.GUI_Text({ Block_About.x + 47,Block_About.y }, 1, "for Counter-Strike 2 (External Free)", { 100,100,100 });
 					GUI_VAR.GUI_Text(Block_About, 2, "Version: " + Variable::Float_Precision(Rensen_Version), { 100,100,100 });
 					GUI_VAR.GUI_Text(Block_About, 3, "Release date: " + Rensen_ReleaseDate, { 100,100,100 });
-					GUI_VAR.GUI_Text(Block_About, 4, "Author: https://github.com/M3351AN", { 100,100,100 });
+					GUI_VAR.GUI_Text(Block_About, 4, "Author: https://github.com/contactic3", { 100,100,100 });
 					GUI_VAR.GUI_Button_Small({ Block_About.x + 10,Block_About.y }, 4, UI_Setting_OPENLINKAuthor);
 					GUI_VAR.GUI_Tips({ Block_About.x + 10,Block_About.y }, 1, "No ban record so far in 2020!!!", 0, GUI_VAR.Global_Get_EasyGUI_Color());
 					const auto Block_Menu = GUI_VAR.GUI_Block(150, 210, 340, "Menu");
@@ -816,7 +816,7 @@ void Thread_Menu() noexcept//菜单线程 (提供给使用者丰富的自定义�
 					}
 					if (UI_Setting_OPENLINKAuthor)//打开作者Github主题页面
 					{
-						System::Open_Website("https://github.com/EITAPORRA2");
+						System::Open_Website("https://github.com/contactic3");
 						System::Log("Setting: OpenGithubURL");
 					}
 					if (UI_Setting_SaveLocalConfig || (System::Get_Key(VK_LCONTROL) && System::Get_Key_Onest(0x53)))//保存当前所设置的参数
@@ -836,7 +836,7 @@ void Thread_Menu() noexcept//菜单线程 (提供给使用者丰富的自定义�
 					}
 					if (UI_Setting_GithubRepositories)//打开Github项目地址
 					{
-						System::Open_Website("https://github.com/M3351AN/Rensen");
+						System::Open_Website("https://github.com/contactic3/contactic3");
 						System::Log("Setting: GithubRepositories");
 					}
 					if (UI_Setting_RestartMenu)//重启菜单
@@ -1062,7 +1062,7 @@ void Thread_Menu() noexcept//菜单线程 (提供给使用者丰富的自定义�
 					GUI_VAR.GUI_Text({ Block_About.x + 47,Block_About.y }, 1, "for Counter-Strike 2 (免费外部)UTT", { 100,100,100 });
 					GUI_VAR.GUI_Text(Block_About, 2, "版本: UTT" + Variable::Float_Precision(Rensen_Version), { 100,100,100 });
 					GUI_VAR.GUI_Text(Block_About, 3, "发布日期: UTT" + Rensen_ReleaseDate, { 100,100,100 });
-					GUI_VAR.GUI_Text(Block_About, 4, "作者: https://github.com/M3351AN", { 100,100,100 });
+					GUI_VAR.GUI_Text(Block_About, 4, "作者: https://github.com/contactic3", { 100,100,100 });
 					GUI_VAR.GUI_Button_Small({ Block_About.x + 10,Block_About.y }, 4, UI_Setting_OPENLINKAuthor);
 					GUI_VAR.GUI_Tips({ Block_About.x + 10,Block_About.y }, 1, "No ban record so far in 2020!!!", 0, GUI_VAR.Global_Get_EasyGUI_Color());
 					const auto Block_Menu = GUI_VAR.GUI_Block(150, 210, 340, "菜单UTT");
@@ -1101,7 +1101,7 @@ void Thread_Menu() noexcept//菜单线程 (提供给使用者丰富的自定义�
 					}
 					if (UI_Setting_OPENLINKAuthor)//打开作者Github主题页面
 					{
-						System::Open_Website("https://github.com/Coslly");
+						System::Open_Website("https://github.com/contactic3");
 						System::Log("Setting: OpenGithubURL");
 					}
 					if (UI_Setting_SaveLocalConfig || (System::Get_Key(VK_LCONTROL) && System::Get_Key_Onest(0x53)))//保存当前所设置的参数
@@ -1121,7 +1121,7 @@ void Thread_Menu() noexcept//菜单线程 (提供给使用者丰富的自定义�
 					}
 					if (UI_Setting_GithubRepositories)//打开Github项目地址
 					{
-						System::Open_Website("https://github.com/Coslly/Rensen");
+						System::Open_Website("https://github.com/contactic3/Rensen");
 						System::Log("Setting: GithubRepositories");
 					}
 					if (UI_Setting_RestartMenu)//重启菜单
@@ -2024,28 +2024,28 @@ int main() noexcept//主线程 (加载多线程, 一些杂项功能)
 	System::Anti_Debugger("Debugging is disabled after compilation is completed.");//防止逆向破解
 	//----------------------------------------------------------------------------------------------------------------------------------
 	System::URL_READ UserID_READ = { "Cache_UserID" }; BOOL Attest = false;//认证变量
-	if (UserID_READ.StoreMem("https://github.com/EITAPORRA2/Rensen/blob/main/Cloud%20Files/UserID.uid?raw=true"))//Github读取有效用户ID
+	if (UserID_READ.StoreMem("https://github.com/contactic3/Rensen/blob/main/Cloud%20Files/UserID.uid?raw=true"))//Github读取有效用户ID
 	{
 		if (!Attest)for (short i = 0; i <= 50000; i++) { if (System::Get_UserName() == UserID_READ.Read(i) || Variable::String_Upper(UserID_READ.Read(i)) == "BYPASS") { Attest = true; break; } }//遍历检测并修改认证
 		UserID_READ.Release();//释放缓存
 	}
-	if (!Attest) { Window::Message_Box("Rensen Attest - " + System::Get_UserName(), "Your identity cannot be passed.\n\nUnable to access from Chinese IP.\n\nAuthor: https://github.com/EITAPORRA2\n", MB_ICONSTOP); exit(0); }//未被认证则直接退出
+	if (!Attest) { Window::Message_Box("Rensen Attest - " + System::Get_UserName(), "Your identity cannot be passed.\n\nUnable to access from Chinese IP.\n\nAuthor: https://github.com/contactic3\n", MB_ICONSTOP); exit(0); }//未被认证则直接退出
 	//----------------------------------------------------------------------------------------------------------------------------------
 	System::URL_READ AutoUpdate = { "Cache_Update" };//自动更新系统
-	if (AutoUpdate.StoreMem("https://github.com/EITAPORRA2/Rensen/blob/main/Rensen/Rensen/Main.cpp?raw=true"))//版本号更新检查
+	if (AutoUpdate.StoreMem("https://github.com/contactic3/Rensen/blob/main/Rensen/Rensen/Main.cpp?raw=true"))//版本号更新检查
 	{
 		auto Version = AutoUpdate.Read(3); if (Version != "") { Version.erase(0, 29); Version.erase(Version.size() - 15, 100); }//擦除无用字符只获取版本号
 		AutoUpdate.Release();//释放缓存
 		if (Variable::string_float_(Version) > Rensen_Version && Window::Message_Box("Rensen Update", "A new version has been released.\nDo you want to update now?\nIt may take tens of seconds.\n\nYou will be updated to Ver[" + Version + "]", MB_YESNO | MB_ICONASTERISK) == 6)
 		{
-			System::Open_Website("https://github.com/EITAPORRA2/Rensen/releases/download/Release/Rensen.exe"); exit(0);//打开下载链接并且关闭程序
+			System::Open_Website("https://github.com/contactic3/Rensen/releases/download/Release/Rensen.exe"); exit(0);//打开下载链接并且关闭程序
 		}
 	}
 	//----------------------------------------------------------------------------------------------------------------------------------
 	System::Anti_click();//控制台不被暂停
 	Window::Hide_ConsoleWindow();//隐藏控制台
 	Window::Initialization_ConsoleWindow();//初始化控制台窗口 (初始化窗口大小, 清除字符)
-	printf("Welcome to Rensen for Counter-Strike 2 cheat.\nThe Rensen project is a version converted from FreeCS.\nNo team author By: https://github.com/M3351AN\nThe following information returned is debugging information.\n打开汉化版本需要在同目录添加命名为CN的文件\n");//作者留言
+	printf("Welcome to Rensen for Counter-Strike 2 cheat.\nThe Rensen project is a version converted from FreeCS.\nNo team author By: https://github.com/contactic3\nThe following information returned is debugging information.\n打开汉化版本需要在同目录添加命名为CN的文件\n");//作者留言
 	System::Log("Load Thread: main()");
 	Sleep(100);//修复重启进程冲突
 	if (!System::Judge_File(UI_LocalConfigPath)) { System::Create_File(UI_LocalConfigPath, UI_DefaultConfig); System::Self_Restart(); }//创建默认参数文件 (当未找到参数文件时, 第一次启动时)
